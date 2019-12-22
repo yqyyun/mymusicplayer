@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="100"
+        >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#b62a25">
+        <ImageView
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/t_actionbar_music_normal"/>
+        <ImageView
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello>"/>
+    <LinearLayout
+        android:id="@+id/layout_lcoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/main_local_icon"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_margin="5dp"
+            android:paddingLeft="3dp"
+            android:paddingStart="3dp" android:src="@drawable/a2y" />
+        <TextView
+            android:id="@+id/main_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp" android:padding="2dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:text="本地音乐"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_margin="5dp"
+            android:paddingLeft="3dp"
+            android:paddingStart="3dp" android:src="@drawable/a2y"/>
+        <TextView
+            android:id="@+id/main_recnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp" android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="最近播放"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_margin="5dp"
+            android:paddingLeft="3dp"
+            android:paddingStart="3dp" android:src="@drawable/a2y"/>
+        <TextView
+            android:id="@+id/main_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp" android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="下载管理"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_mylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7c7675">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="我的歌单>"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_storedlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7c7675">
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:text="我收藏的歌单>"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/main_playbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></FrameLayout>
+
+
+</LinearLayout>
